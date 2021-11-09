@@ -39,6 +39,11 @@ header {
 }
 
 .nav-link {
+    color: rgba(255, 255, 255, 0.787) !important;
+    font-weight: 600;
+}
+
+.nav-link:hover {
     color: white !important;
 }
 
@@ -90,6 +95,10 @@ header {
     margin-left: -1.5rem;
 }
 
+.header_link_1:hover {
+    color: #E57E14;
+}
+
 .header_link_2 {
     text-decoration: none;
     color: #fff;
@@ -99,6 +108,10 @@ header {
     display: block;
 }
 
+.header_link_2:hover {
+    color: #E57E14;
+}
+
 .header_div_2 {
     display: flex;
     justify-content: end;
@@ -106,11 +119,20 @@ header {
     position: relative;
 }
 
-.doge_2 {
+.doge_1 {
     position: absolute;
+    left: 5rem;
+    top: 39.5rem;
 }
 
-.header_div_2 img {
+.doge_2 {
+    position: absolute;
+    left: 26rem;
+    top: 32rem;
+    width: 42rem;
+}
+
+.header_div_2 .iceland {
     width: 944px;
 }
 
@@ -160,6 +182,7 @@ header {
     text-align: center;
     font-family: "Traveler";
     color: transparent;
+    background-clip: text;
     -webkit-background-clip: text;
     background-image: linear-gradient( to bottom, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
 }
@@ -179,6 +202,7 @@ header {
     line-height: 7rem;
     text-align: center;
     color: #fff;
+    margin-top: -3rem;
 }
 
 .center_col {
@@ -189,30 +213,51 @@ header {
 }
 
 .center_col .center_col_1 {
-    box-shadow: inset 0px 0px 221px rgba(255, 255, 255, 0.25);
+    background: linear-gradient(180deg, rgba(242, 220, 194, 0.7) 0%, rgba(255, 255, 255, 0.294) 100%);
+    backdrop-filter: blur(4px);
     width: 22rem;
     height: 23.4rem;
     transform: rotate(-5deg);
     margin-top: 9rem;
     margin-right: 2rem;
-    border-radius: 5px;
+    border-radius: 10px;
+    position: relative;
+}
+
+.center_col .center_col_1 img {
+    position: absolute;
+    left: 7px;
+    filter: drop-shadow(0px 4px 89px rgba(0, 0, 0, 0.25));
 }
 
 .center_col .center_col_2 {
-    box-shadow: inset 0px 0px 221px rgba(255, 255, 255, 0.25);
+    background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0.171) 100%);
+    backdrop-filter: blur(4px);
     width: 22rem;
     height: 30.2rem;
-    border-radius: 5px;
+    border-radius: 10px;
+}
+
+.center_col .center_col_2 img {
+    position: absolute;
+    filter: drop-shadow(0px 4px 89px rgba(0, 0, 0, 0.25));
 }
 
 .center_col .center_col_3 {
-    box-shadow: inset 0px 0px 221px rgba(255, 255, 255, 0.25);
+    background: linear-gradient(180deg, rgba(242, 220, 194, 0.7) 0%, rgba(255, 255, 255, 0.21) 100%);
+    backdrop-filter: blur(4px);
     width: 22rem;
     height: 23.4rem;
     transform: rotate(5deg);
     margin-top: 9rem;
     margin-left: 2rem;
-    border-radius: 5px;
+    border-radius: 10px;
+}
+
+.center_col .center_col_3 img {
+    position: absolute;
+    left: 7px;
+    filter: drop-shadow(0px 4px 89px rgba(0, 0, 0, 0.25));
 }
 
 .center_main_div_col_2 p {
@@ -273,7 +318,7 @@ header {
 .center_main_div_2 {
     background: linear-gradient( 190deg, rgba(37, 145, 220, 0) 7.33%, #049dd9 15%, #f2dcc2 47%);
     margin-top: -25em;
-    height: 277rem;
+    height: 290rem;
 }
 
 .test::after {
@@ -452,6 +497,8 @@ header {
     align-items: center;
     position: relative;
     height: 42.9rem;
+    width: 37rem;
+    margin: 0rem auto !important;
 }
 
 .phase_card img {
@@ -473,10 +520,25 @@ header {
     line-height: 4rem;
 }
 
+.phase_card ul li:before {
+    content: '\2014';
+    position: absolute;
+    margin-left: -30px;
+}
+
+ul.dashed>li {
+    text-indent: -5px;
+}
+
+ul.dashed>li:before {
+    content: "-";
+    text-indent: -5px;
+}
+
 .all_dots {
     display: flex;
     align-items: center;
-    padding: 3rem 20rem;
+    padding: 2rem 20rem 0rem 20rem;
 }
 
 .dot_1 {
@@ -502,12 +564,14 @@ footer {
     background-repeat: no-repeat;
     position: relative;
     height: 65rem;
+    margin-top: 35rem;
+    transform: rotate(0.2deg);
 }
 
 .footer_center_img {
     position: absolute;
     left: 50rem;
-    top: -22rem;
+    top: -32rem;
 }
 
 footer h2 {
@@ -518,7 +582,7 @@ footer h2 {
     color: #fff;
     position: absolute;
     left: 57rem;
-    top: 30rem;
+    top: 21rem;
 }
 
 footer h3 {
@@ -530,7 +594,7 @@ footer h3 {
     color: #E57E14;
     position: absolute;
     left: 57rem;
-    top: 47rem;
+    top: 40rem;
 }
 
 footer a {
@@ -541,6 +605,10 @@ footer a {
     margin-top: 4.5rem;
     display: block;
     position: absolute;
-    top: 50rem;
+    top: 41rem;
     right: 10rem;
+}
+
+footer a:hover {
+    color: #E57E14;
 }
