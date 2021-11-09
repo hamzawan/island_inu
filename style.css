@@ -121,8 +121,11 @@ header {
 
 .doge_1 {
     position: absolute;
+    width: 50%;
     left: 5rem;
     top: 39.5rem;
+    transform: rotate(-25deg);
+    
 }
 
 .doge_2 {
@@ -226,7 +229,7 @@ header {
 
 .center_col .center_col_1 img {
     position: absolute;
-    left: 7px;
+    width: 100%;
     filter: drop-shadow(0px 4px 89px rgba(0, 0, 0, 0.25));
 }
 
@@ -236,10 +239,13 @@ header {
     width: 22rem;
     height: 30.2rem;
     border-radius: 10px;
+    position: relative;
 }
 
 .center_col .center_col_2 img {
     position: absolute;
+    width: 130%;
+    transform: translate(-12%, 10%);
     filter: drop-shadow(0px 4px 89px rgba(0, 0, 0, 0.25));
 }
 
@@ -559,18 +565,27 @@ ul.dashed>li:before {
 footer {
     width: 100%;
     background-image: url("img/footer_img.png");
-    background-size: cover;
+    background-size: contain;
     margin-top: 18.5rem;
     background-repeat: no-repeat;
     position: relative;
     height: 65rem;
     margin-top: 35rem;
 }
+.footer-content{
+    margin: 4rem auto 0 auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+   
+}
 
 .footer_center_img {
     position: absolute;
-    left: 50rem;
-    top: -32rem;
+    left: 50%;
+    top: 10%;
+    transform: translate(-50%, -65%);
 }
 
 footer h2 {
@@ -579,9 +594,6 @@ footer h2 {
     line-height: 7rem;
     text-align: center;
     color: #fff;
-    position: absolute;
-    left: 57rem;
-    top: 21rem;
 }
 
 footer h3 {
@@ -591,9 +603,7 @@ footer h3 {
     text-align: center;
     font-family: "Traveler";
     color: #E57E14;
-    position: absolute;
-    left: 57rem;
-    top: 40rem;
+    
 }
 
 footer a {
@@ -601,11 +611,8 @@ footer a {
     color: #fff;
     font-size: 1.6rem;
     font-weight: 600;
-    margin-top: 4.5rem;
-    display: block;
-    position: absolute;
-    top: 41rem;
-    right: 10rem;
+    margin-top: 10rem;
+    display: block;    
 }
 
 footer a:hover {
