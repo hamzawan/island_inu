@@ -66,13 +66,13 @@
                 </div>
             </div>
         </header>
-        <section class="center_main_div">
+        <section class="center_main_div" onmouseout="mouseOut(this)">
             <div class="row m-0">
                 <div class="col-md-3 position-relative p-0">
                     <img src="img/tree_left.png" alt="" class="tree_left" />
-                    <img src="img/Cocktail.png" alt="" class="cocktail_left" />
-                    <img src="img/Beach Ball.png" alt="" class="beach_left" />
-                    <img src="img/Glasses.png" alt="" class="glasses_left" />
+                    <img src="img/Cocktail.png" alt="" class="cocktail_left move" />
+                    <img src="img/Beach Ball.png" alt="" class="beach_left move" />
+                    <img src="img/Glasses.png" alt="" class="glasses_left move" />
                 </div>
                 <div class="col-md-6 p-0">
                     <div class="center_main_div_col_2">
@@ -109,16 +109,16 @@
                 </div>
                 <div class="col-md-3 position-relative p-0">
                     <img src="img/tree_right.png" alt="" class="tree_rigt" />
-                    <img src="img/Air-Balloon.png" alt="" class="air_balloon_right" />
-                    <img src="img/Compass.png" alt="" class="compass_right" />
-                    <img src="img/Coconut Juice.png" alt="" class="coconut_right" />
+                    <img src="img/Air-Balloon.png" alt="" class="air_balloon_right move" />
+                    <img src="img/Compass.png" alt="" class="compass_right move" />
+                    <img src="img/Coconut Juice.png" alt="" class="coconut_right move" />
                 </div>
             </div>
         </section>
         <section class="center_main_div_2">
             <h1>Our<br /><span>Ecosystem</span></h1>
             <div class="container mb-4">
-                <div class="row m-0 test">
+                <div class="row m-0 ecosystem-sec">
                     <div class="col-md-3 p-0" style="z-index: 1">
                         <img src="img/_anim-3-dog2.gif" alt="" width="100%" />
                         <div class="circle_div">
@@ -129,7 +129,7 @@
                             <a href="">More<br />info</a>
                         </div>
                     </div>
-                    <div class="col-md-6 p-0" style="z-index: 1">
+                    <div class="col-md-6 p-0" style="z-index: 1; margin-top: 5rem;">
                         <div class="center_tree_div">
                             <img src="img/center_tree.png" alt="" />
                         </div>
@@ -244,26 +244,26 @@
                         </div>
 
                         <div class="point my-5" style="flex-direction: row-reverse">
-                                <div class="value">02</div>
+                            <div class="value">02</div>
+                            <div class="dashed"></div>
+                            <div class="content">
+                                <h2>Send ETH to your wallet</h2>
+                                <p>Create a MetaMask Wallet using either a desktop computer or an iOS/Android mobile device. That will allow you to buy, sell, send and receive XAEA12. <a href="#" class="clickhere"> Click here! </a></p>
+                            </div>
+                        </div>
+
+
+                        <div class="buy_points">
+                            <div class="point">
+                                <div class="value">03</div>
                                 <div class="dashed"></div>
                                 <div class="content">
-                                    <h2>Send ETH to your wallet</h2>
+                                    <h2>Connect your wallet to <a href="#" class="clickhere"> Uniswap </a></h2>
                                     <p>Create a MetaMask Wallet using either a desktop computer or an iOS/Android mobile device. That will allow you to buy, sell, send and receive XAEA12. <a href="#" class="clickhere"> Click here! </a></p>
                                 </div>
                             </div>
 
-
-                            <div class="buy_points">
-                                    <div class="point">
-                                        <div class="value">03</div>
-                                        <div class="dashed"></div>
-                                        <div class="content">
-                                            <h2>Connect your wallet to <a href="#" class="clickhere"> Uniswap </a></h2>
-                                            <p>Create a MetaMask Wallet using either a desktop computer or an iOS/Android mobile device. That will allow you to buy, sell, send and receive XAEA12. <a href="#" class="clickhere"> Click here! </a></p>
-                                        </div>
-                                    </div>
-
-                        <div class="point my-5" style="flex-direction: row-reverse">
+                            <div class="point my-5" style="flex-direction: row-reverse">
                                 <div class="value">04</div>
                                 <div class="dashed"></div>
                                 <div class="content">
@@ -272,24 +272,52 @@
                                 </div>
                             </div>
 
+                        </div>
                     </div>
-                </div>
 
+                </div>
             </div>
             <footer class="footer">
-                
+
                 <div class="footer_center_img">
                     <img src="img/_anim-3-dog2.gif" width="100%" alt="">
                 </div>
                 <div class="footer-content">
-                <h2>BIG THINGS<br /> ARE COMING</h2>
-                <h3>Island Inu</h3>
-                <a href="#">JOIN TELEGRAM<img src="img/arrow_downward up.png" /></a>
+                    <h2>BIG THINGS<br /> ARE COMING</h2>
+                    <h3>Island Inu</h3>
                 </div>
+                <a href="#">JOIN TELEGRAM<img src="img/arrow_downward up.png" /></a>
             </footer>
         </section>
     </div>
 </body>
 <script src="bootstrap/js/bootstrap.min.js"></script>
+<script>
+    const mainDiv = document.querySelector('.center_main_div');
+    const moveObjects = document.querySelectorAll('.move');
+    var oldX = 0;
+    var oldY = 0;
+    console.log(moveObjects);
+    mainDiv.addEventListener('mousemove', (event) => {
+        var mouseX = event.offsetX;
+        var mouseY = event.offsetY;
+        if (mouseX < 55 || mouseY < 57) {
+            moveObjects.forEach(function(params) {
+                params.style.transform = `translate3d(-${mouseX/mainDiv.clientWidth * 150}%, -${mouseY/mainDiv.clientHeight * 50}%, 0)`;
+            })
+        }
+        if (mouseX > 55 || mouseY > 57) {
+            moveObjects.forEach(function(params) {
+                params.style.transform = `translate3d(-${mouseX/mainDiv.clientWidth * 150}%, -${mouseY/mainDiv.clientHeight * 50}%, 0)`;
+            })
+        }
+    })
+
+    function mouseOut(event) {
+        moveObjects.forEach(function(params) {
+            params.style.transform = `translate3d(0px,0px, 0px)`;
+        })
+    }
+</script>
 
 </html>
