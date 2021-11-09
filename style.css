@@ -1,106 +1,120 @@
 @font-face {
-  font-family: "Traveler";
-  src: url("fonts/Traveler/Traveler.ttf");
+    font-family: "Traveler";
+    src: url("fonts/Traveler/Traveler.ttf");
 }
+
 @font-face {
-  font-family: "Blinker";
-  src: url("fonts/Blinker/Blinker-Regular.ttf");
+    font-family: "Blinker";
+    src: url("fonts/Blinker/Blinker-Regular.ttf");
 }
 
 *,
 *::before,
 *::after {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
+
 html {
-  font-size: 62.5%;
+    font-size: 62.5%;
 }
 
 body {
-  font-family: Blinker;
+    font-family: Blinker;
 }
+
 .main_body_div {
-  background-image: url("img/main_background.png"),
-    radial-gradient(
-      75.91% 30.08% at 68.23% 23.65%,
-      rgba(108, 211, 234, 0.72) 0%,
-      #1d4abe 100%
-    );
-  background-size: cover;
-  height: 2424px;
+    background-image: url("img/main_background.png"), radial-gradient( 75.91% 30.08% at 68.23% 23.65%, rgba(108, 211, 234, 0.72) 0%, #1d4abe 100%);
+    background-size: cover;
+    height: 270rem;
 }
+
 header {
-  padding: 2rem 0rem 0rem 9.7rem;
+    padding: 2rem 0rem 0rem 9.7rem;
 }
+
 .navbar {
-  background-color: transparent;
+    background-color: transparent;
 }
+
 .nav-link {
-  color: white !important;
+    color: white !important;
 }
+
 .navbar-expand-lg .navbar-nav .nav-link {
-  padding: 0rem 2rem;
-  font-size: 1.6rem;
+    padding: 0rem 2rem;
+    font-size: 1.6rem;
 }
+
 .navbar-nav {
-  margin-left: 10.9rem;
+    margin-left: 10.9rem;
 }
+
 .header_div_1 {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  height: 80rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 80rem;
 }
+
 .header_div_1 h2 {
-  font-size: 15rem;
-  line-height: 7rem;
-  color: #e57e14;
-  font-family: "Traveler";
-  margin-left: 2.5rem;
+    font-size: 15rem;
+    line-height: 7rem;
+    color: #e57e14;
+    font-family: "Traveler";
+    margin-left: 2.5rem;
 }
+
 .header_div_1 h3 {
-  font-size: 7rem;
-  line-height: 7rem;
-  color: #fff;
-  font-weight: 700;
-  margin-top: 7.2rem;
+    font-size: 7rem;
+    line-height: 7rem;
+    color: #fff;
+    font-weight: 700;
+    margin-top: 7.2rem;
 }
+
 .header_div_1 p {
-  font-size: 1.8rem;
-  line-height: 2.16rem;
-  color: #fff;
-  width: 30.1rem;
-  margin-top: 3rem;
+    font-size: 1.8rem;
+    line-height: 2.16rem;
+    color: #fff;
+    width: 30.1rem;
+    margin-top: 3rem;
 }
+
 .header_link_1 {
-  text-decoration: none;
-  color: #fff;
-  font-size: 1.6rem;
-  line-height: 1.92rem;
-  margin-left: -1.5rem;
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.6rem;
+    line-height: 1.92rem;
+    margin-left: -1.5rem;
 }
+
 .header_link_2 {
-  text-decoration: none;
-  color: #fff;
-  font-size: 1.6rem;
-  font-weight: 600;
-  margin-top: 4.5rem;
-  display: block;
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.6rem;
+    font-weight: 600;
+    margin-top: 4.5rem;
+    display: block;
 }
+
 .header_div_2 {
-  display: flex;
-  justify-content: end;
-  margin-top: -4rem;
-  position: relative;
+    display: flex;
+    justify-content: end;
+    margin-top: -4rem;
+    position: relative;
 }
+
 .doge_2 {
-  position: absolute;
+    position: absolute;
 }
+
 .header_div_2 img {
-  width: 944px;
+    width: 944px;
 }
+
+
 /* .body_center_main_div {
   background-image: url(img/Group\ 14.png);
   background-repeat: no-repeat;
@@ -108,321 +122,425 @@ header {
   background-size: cover;
   height: 100rem;
 } */
+
 .tree_left {
-  position: absolute;
-  top: -32rem;
+    position: absolute;
+    top: -32rem;
 }
+
 .cocktail_left {
-  position: absolute;
-  right: 4rem;
-  top: 25rem;
+    position: absolute;
+    right: 4rem;
+    top: 25rem;
 }
+
 .beach_left {
-  position: absolute;
-  top: 50rem;
-  left: 8rem;
+    position: absolute;
+    top: 50rem;
+    left: 8rem;
 }
+
 .glasses_left {
-  position: absolute;
-  top: 72rem;
-  left: 16rem;
+    position: absolute;
+    top: 72rem;
+    left: 16rem;
 }
+
 .center_main_div_col_2 h2 {
-  font-size: 3rem;
-  line-height: 7rem;
-  text-align: center;
-  color: #fff;
-  font-weight: 600;
-  margin-bottom: -5rem;
+    font-size: 3rem;
+    line-height: 7rem;
+    text-align: center;
+    color: #fff;
+    font-weight: 600;
+    margin-bottom: -5rem;
 }
+
 .cap_heading_div h1 {
-  font-size: 25rem;
-  text-align: center;
-  font-family: "Traveler";
-  color: transparent;
-  -webkit-background-clip: text;
-  background-image: linear-gradient(
-    to bottom,
-    rgba(255, 255, 255, 1),
-    rgba(255, 255, 255, 0)
-  );
+    font-size: 25rem;
+    text-align: center;
+    font-family: "Traveler";
+    color: transparent;
+    -webkit-background-clip: text;
+    background-image: linear-gradient( to bottom, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
 }
+
 .cap_heading_div {
-  position: relative;
+    position: relative;
 }
+
 .cap_heading_div img {
-  position: absolute;
-  top: 2.5rem;
-  left: 6.3rem;
+    position: absolute;
+    top: 2.5rem;
+    left: 6.3rem;
 }
+
 .center_main_div_col_2 h4 {
-  font-size: 3rem;
-  line-height: 7rem;
-  text-align: center;
-  color: #fff;
+    font-size: 3rem;
+    line-height: 7rem;
+    text-align: center;
+    color: #fff;
 }
+
 .center_col {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
 }
+
 .center_col .center_col_1 {
-  box-shadow: inset 0px 0px 221px rgba(255, 255, 255, 0.25);
-  width: 22rem;
-  height: 23.4rem;
-  transform: rotate(-5deg);
-  margin-top: 9rem;
-  margin-right: 2rem;
-  border-radius: 5px;
+    box-shadow: inset 0px 0px 221px rgba(255, 255, 255, 0.25);
+    width: 22rem;
+    height: 23.4rem;
+    transform: rotate(-5deg);
+    margin-top: 9rem;
+    margin-right: 2rem;
+    border-radius: 5px;
 }
+
 .center_col .center_col_2 {
-  box-shadow: inset 0px 0px 221px rgba(255, 255, 255, 0.25);
-  width: 22rem;
-  height: 30.2rem;
-  border-radius: 5px;
+    box-shadow: inset 0px 0px 221px rgba(255, 255, 255, 0.25);
+    width: 22rem;
+    height: 30.2rem;
+    border-radius: 5px;
 }
 
 .center_col .center_col_3 {
-  box-shadow: inset 0px 0px 221px rgba(255, 255, 255, 0.25);
-  width: 22rem;
-  height: 23.4rem;
-  transform: rotate(5deg);
-  margin-top: 9rem;
-  margin-left: 2rem;
-  border-radius: 5px;
+    box-shadow: inset 0px 0px 221px rgba(255, 255, 255, 0.25);
+    width: 22rem;
+    height: 23.4rem;
+    transform: rotate(5deg);
+    margin-top: 9rem;
+    margin-left: 2rem;
+    border-radius: 5px;
 }
+
 .center_main_div_col_2 p {
-  font-size: 1.9rem;
-  line-height: 2.5rem;
-  text-align: center;
-  color: #fff;
-  margin-top: 2rem;
+    font-size: 1.9rem;
+    line-height: 2.5rem;
+    text-align: center;
+    color: #fff;
+    margin-top: 2rem;
 }
+
 .content_bold {
-  font-size: 2.5rem;
-  text-align: center;
-  color: #fff;
-  font-weight: 600;
-  margin-top: 3rem;
+    font-size: 2.5rem;
+    text-align: center;
+    color: #fff;
+    font-weight: 600;
+    margin-top: 3rem;
 }
+
 .content_bold_2 {
-  font-size: 3.5rem;
-  font-weight: 700;
-  text-align: center;
-  color: #fff;
+    font-size: 3.5rem;
+    font-weight: 700;
+    text-align: center;
+    color: #fff;
 }
+
 .content {
-  font-size: 1.8rem;
-  line-height: 2.16rem;
-  color: #fff;
-  margin-top: 3rem;
-  text-align: center;
+    font-size: 1.8rem;
+    line-height: 2.16rem;
+    color: #fff;
+    margin-top: 3rem;
+    text-align: center;
 }
+
 .tree_rigt {
-  position: absolute;
-  right: 0px;
-  top: -34rem;
+    position: absolute;
+    right: 0px;
+    top: -34rem;
 }
+
 .air_balloon_right {
-  position: absolute;
-  left: 4rem;
-  top: 25rem;
+    position: absolute;
+    left: 4rem;
+    top: 25rem;
 }
+
 .compass_right {
-  position: absolute;
-  top: 50rem;
-  right: 8rem;
+    position: absolute;
+    top: 50rem;
+    right: 8rem;
 }
+
 .coconut_right {
-  position: absolute;
-  top: 72rem;
-  right: 16rem;
+    position: absolute;
+    top: 72rem;
+    right: 16rem;
 }
+
 .center_main_div_2 {
-  background: linear-gradient(
-    180deg,
-    rgba(37, 145, 220, 0) 7.33%,
-    #049dd9 28.3%,
-    #f2dcc2 80%
-  );
-  margin-top: -26rem;
+    background: linear-gradient( 190deg, rgba(37, 145, 220, 0) 7.33%, #049dd9 15%, #f2dcc2 47%);
+    margin-top: -25em;
+    height: 277rem;
 }
+
 .test::after {
-  content: "ISLAND INU";
-  position: absolute;
-  font-size: 35rem;
-  font-weight: 700;
-  text-align: center;
-  font-family: "Traveler";
-  color: #fff;
-  opacity: 0.2;
-  left: 0px;
-  right: 0px;
-  top: 217rem;
-  z-index: 0;
+    content: "ISLAND INU";
+    position: absolute;
+    font-size: 32rem;
+    font-weight: 700;
+    text-align: center;
+    font-family: "Traveler";
+    color: #fff;
+    opacity: 0.2;
+    left: 0px;
+    right: 0px;
+    top: 217rem;
+    z-index: 0;
 }
+
 .center_main_div {
-  background-image: url(img/sew.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 54%;
-  background-position: center;
+    background-image: url(img/sew.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 130rem;
 }
+
 .center_main_div_2 h1 {
-  font-size: 10rem;
-  line-height: 7rem;
-  text-align: center;
-  color: #ffff;
+    font-size: 10rem;
+    line-height: 7rem;
+    text-align: center;
+    color: #ffff;
 }
+
 .center_main_div_2 h1 span {
-  font-size: 10rem;
-  text-align: center;
-  font-weight: 700;
-  color: #df9c5e;
-  line-height: 13rem;
+    font-size: 10rem;
+    text-align: center;
+    font-weight: 700;
+    color: #df9c5e;
+    line-height: 13rem;
 }
+
 .circle_div {
-  border-radius: 70rem;
-  border: 2px solid white;
-  width: 32.13rem;
-  height: 32.13rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding-top: 7rem;
+    border-radius: 70rem;
+    border: 2px solid white;
+    width: 32.13rem;
+    height: 32.13rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 7rem;
 }
+
 .circle_div h1 {
-  font-size: 10rem;
-  font-weight: 700;
-  text-align: center;
-  font-family: "Traveler";
+    font-size: 10rem;
+    font-weight: 700;
+    text-align: center;
+    font-family: "Traveler";
 }
+
 .circle_div p {
-  font-size: 2rem;
-  line-height: 2.5rem;
-  text-align: center;
-  color: #fff;
-  width: 22rem;
+    font-size: 2rem;
+    line-height: 2.5rem;
+    text-align: center;
+    color: #fff;
+    width: 22rem;
 }
+
 .circle_div a {
-  text-decoration: none;
-  font-size: 2rem;
-  text-align: center;
-  color: black;
-  padding: 2rem;
-  border-radius: 10rem;
-  margin-top: 2rem;
-  width: 10rem;
-  background: linear-gradient(156.94deg, #ffffff 10.96%, #d2d2d2 85.07%);
-  box-shadow: 0px 4px 189px rgba(0, 0, 0, 0.25);
+    text-decoration: none;
+    font-size: 2rem;
+    text-align: center;
+    color: black;
+    padding: 2rem;
+    border-radius: 10rem;
+    margin-top: 2rem;
+    width: 10rem;
+    background: linear-gradient(156.94deg, #ffffff 10.96%, #d2d2d2 85.07%);
+    box-shadow: 0px 4px 189px rgba(0, 0, 0, 0.25);
 }
+
 .circle_div_2 {
-  border-radius: 70rem;
-  border: 2px solid white;
-  width: 32.13rem;
-  height: 32.13rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding-top: 7rem;
-  background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 70rem;
+    border: 2px solid white;
+    width: 32.13rem;
+    height: 32.13rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 7rem;
+    background-color: rgba(255, 255, 255, 0.5);
 }
+
 .circle_div_2 h1 {
-  font-size: 10rem;
-  font-weight: 700;
-  text-align: center;
-  font-family: "Traveler";
-  color: black;
+    font-size: 10rem;
+    font-weight: 700;
+    text-align: center;
+    font-family: "Traveler";
+    color: black;
 }
+
 .circle_div_2 p {
-  font-size: 2rem;
-  line-height: 2.5rem;
-  text-align: center;
-  color: black;
-  width: 22rem;
+    font-size: 2rem;
+    line-height: 2.5rem;
+    text-align: center;
+    color: black;
+    width: 22rem;
 }
+
 .circle_div_2 a {
-  text-decoration: none;
-  font-size: 2rem;
-  text-align: center;
-  color: black;
-  padding: 2rem;
-  border-radius: 10rem;
-  margin-top: 2rem;
-  width: 10rem;
-  background: linear-gradient(302.15deg, #e67e14 42.22%, #ff7b00 110.99%);
-  box-shadow: 0px 4px 189px rgba(0, 0, 0, 0.25);
+    text-decoration: none;
+    font-size: 2rem;
+    text-align: center;
+    color: black;
+    padding: 2rem;
+    border-radius: 10rem;
+    margin-top: 2rem;
+    width: 10rem;
+    background: linear-gradient(302.15deg, #e67e14 42.22%, #ff7b00 110.99%);
+    box-shadow: 0px 4px 189px rgba(0, 0, 0, 0.25);
 }
+
 .center_tree_div {
-  display: flex;
-  justify-content: center;
-  filter: drop-shadow(0px 4px 246px rgba(0, 0, 0, 0.25));
+    display: flex;
+    justify-content: center;
+    filter: drop-shadow(0px 4px 246px rgba(0, 0, 0, 0.25));
 }
+
 .center_tree_div img {
-  width: 70rem;
-  height: 80.5rem;
+    width: 70rem;
+    height: 80.5rem;
 }
+
 .road_map_content {
-  height: 70rem;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
+    height: 70rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
+
 .road_map_content h2 {
-  font-size: 10rem;
-  color: #e57e14;
-  line-height: 7rem;
-  font-weight: 400;
+    font-size: 10rem;
+    color: #e57e14;
+    line-height: 7rem;
+    font-weight: 400;
 }
+
 .road_map_content h2 span {
-  font-size: 10rem;
-  color: #113561;
-  font-weight: 700;
-  line-height: 13rem;
+    font-size: 10rem;
+    color: #113561;
+    font-weight: 700;
+    line-height: 13rem;
 }
+
 .road_map_content p {
-  font-size: 1.8rem;
-  color: #000000;
-  line-height: 2.1rem;
-  font-weight: 400;
-  width: 29rem;
+    font-size: 1.8rem;
+    color: #000000;
+    line-height: 2.1rem;
+    font-weight: 400;
+    width: 29rem;
 }
+
 .road_map_content a {
-  font-size: 1.8rem;
-  color: #113561;
-  text-decoration: none;
-  margin-left: -2rem;
+    font-size: 1.8rem;
+    color: #113561;
+    text-decoration: none;
+    margin-left: -2rem;
 }
+
 .phase_card {
-  background: linear-gradient(
-    180deg,
-    rgba(230, 126, 20, 0.37) 0%,
-    rgba(242, 220, 194, 0.54) 100%
-  );
-  border-radius: 10px;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-  position: relative;
-  height: 42.9rem;
+    background: linear-gradient( 180deg, rgba(230, 126, 20, 0.37) 0%, rgba(242, 220, 194, 0.54) 100%);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    height: 42.9rem;
 }
+
 .phase_card img {
-  position: absolute;
-  bottom: 36.5rem;
+    position: absolute;
+    bottom: 36.1rem;
 }
+
 .phase_card h2 {
-  font-size: 5rem;
-  line-height: 7rem;
-  font-weight: 600;
-  color: #b66818;
+    font-size: 5rem;
+    line-height: 7rem;
+    font-weight: 600;
+    color: #b66818;
 }
+
 .phase_card ul li {
-  font-size: 2.5rem;
-  color: black;
-  list-style: none;
-  line-height: 4rem;
+    font-size: 2.5rem;
+    color: black;
+    list-style: none;
+    line-height: 4rem;
+}
+
+.all_dots {
+    display: flex;
+    align-items: center;
+    padding: 3rem 20rem;
+}
+
+.dot_1 {
+    background-color: orange;
+    height: 4rem;
+    width: 4rem;
+    border-radius: 100rem;
+    border: .4rem solid #fff;
+}
+
+.line_dark {
+    background-color: orange;
+    width: 2.5rem;
+    height: 0.5rem;
+    margin: 0rem auto;
+}
+
+footer {
+    width: 100%;
+    background-image: url("img/footer_img.png");
+    background-size: cover;
+    margin-top: 18.5rem;
+    background-repeat: no-repeat;
+    position: relative;
+    height: 65rem;
+}
+
+.footer_center_img {
+    position: absolute;
+    left: 50rem;
+    top: -22rem;
+}
+
+footer h2 {
+    font-size: 7rem;
+    font-weight: 600;
+    line-height: 7rem;
+    text-align: center;
+    color: #fff;
+    position: absolute;
+    left: 57rem;
+    top: 30rem;
+}
+
+footer h3 {
+    font-size: 15rem;
+    font-weight: 700;
+    line-height: 7rem;
+    text-align: center;
+    font-family: "Traveler";
+    color: #E57E14;
+    position: absolute;
+    left: 57rem;
+    top: 47rem;
+}
+
+footer a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.6rem;
+    font-weight: 600;
+    margin-top: 4.5rem;
+    display: block;
+    position: absolute;
+    top: 50rem;
+    right: 10rem;
 }
