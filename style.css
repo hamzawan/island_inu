@@ -324,7 +324,7 @@ header {
 .center_main_div_2 {
     background: linear-gradient( 190deg, rgba(37, 145, 220, 0) 7.33%, #049dd9 15%, #f2dcc2 47%);
     margin-top: -25em;
-    height: 290rem;
+    height: 452rem;
 }
 
 .test::after {
@@ -616,5 +616,81 @@ footer a {
 }
 
 footer a:hover {
+    color: #E57E14;
+}
+
+
+.buy_island p:first-child{
+    color: #E57E14;
+    font-size: 7rem;
+    line-height: 7rem;
+    text-align: center;
+    margin-top: 7rem;
+    
+}
+.buy_island p:last-child{
+    color: #113561;
+    font-size: 7rem;
+    line-height: 7rem;
+    font-weight: bold;
+    text-align: center; 
+    margin-bottom: 7rem;
+}
+
+.buy_points{
+    width: 100%;
+}
+.buy_points .point{
+    background: linear-gradient(90deg, rgba(230, 126, 20, 0.59) 0%, rgba(242, 220, 194, 0.54) 100%);
+    border-radius: 10px;
+    /* height: 200px; */
+    display: flex;
+    align-items: center;
+    padding: 4rem 3rem;
+}
+
+.buy_points .point .value{
+    width: 11rem;
+    height: 9rem;
+    background: linear-gradient(158.45deg, #7AA1CF 18.16%, #1D5BA4 123.73%);
+    border-radius: 50%;
+    border: 5px solid #fff;
+    font-size: 3.6rem;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.buy_points .point .dashed{
+    border: 2px dashed #fff;
+    width: 7rem;
+    margin: 0px 20px;
+
+}
+.buy_points .point .content{
+    text-align: left;
+    margin: 0px;
+}
+.buy_points .point .content h2{
+    color: #404040;
+    font-size: 4rem;
+    line-height: 7rem;
+    font-weight: bolder
+}
+
+.buy_points .point .content p{
+    color: #404040;
+    font-size: 2rem;
+    line-height: 35px;
+}
+.buy_points .point .content p .clickhere{
+    font-weight: bold;
+    text-decoration: underline;
+    color: #404040 !important;
+}
+.buy_points .point .content h2 .clickhere{
+    font-weight: bold;
+    text-decoration: underline;
     color: #E57E14;
 }
